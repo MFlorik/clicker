@@ -2,10 +2,48 @@
     padding: 0;
     margin: 0;
 }
+.clearfix{
+    clear: both;
+}
 
 input{
+    height: 20px;
+    width: 40px;
+    border: none;
+    text-align: right;
+}
+.menu{
+    width: 800px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid salmon;
+    border-radius: 25px;
+}
+.money{
+    width: 300px;
+    float: left;
+}
+.money p {
+    margin-bottom: 10px;
+}
+.pyk{
+    margin:10px 0 ;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.upgrades{
+    width: 400px;
+    float: right;
+}
+.upgrades p{
+    margin-bottom: 10px;
+}
+.upgrades p button{
     height: 25px;
-    width: 50px;
-    background-color: #000;
-    color: #fff;
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px;
 }

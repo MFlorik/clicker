@@ -7,20 +7,25 @@
     <title>Klicker</title>
 </head>
 <body>
-    <!-- name:<input type="text" id="name">
-    <button onclick="ok()">Подтвердить</button> -->
     
-    <div class="number">
-        <!-- <output id="money" class="out"></output> -->
-        <input type="text" id="money" readonly>
-        <p>текущее улучшение - <input type="text" id="yluch" readonly></p>
+    <div class="menu">
+        <div class="money">
+            <p><input type="text" id="money" readonly>-твои деньги</p>
+            <p><input type="text" id="yluch" readonly>-твой уровень клика</p>
+            <p><input type="text" id="ylych_PerTime" readonly>-доход в ед времени</p>
+            <p><input type="text" id="ylych_time" readonly>-сек времени</p>
+            <button onclick="pyk()" class="pyk">Клик</button>
+        </div>
+        <div class="upgrades">
+            <p><input type="text" id="cost" readonly>               - <button onclick="ylych_1()">      улучшить клик +1</button></p>
+            <p><input type="text" id="cost_10" readonly>            - <button onclick="ylych_10()">     улучшить клик +10</button></p>
+            <p><input type="text" id="cost_PerTime" readonly>       - <button onclick="ylych_PerTime()">улучшить доход в ед времени</button></p>
+            <p><input type="text" id="cost_TimeUpgrade" readonly>   - <button onclick="TimeUpgrade()">  ускорить ед времени</button></p>
+            <p id="NoMoney"></p>
+        </div>
+        <div class="clearfix"></div>
     </div>
-    <button onclick="pyk()">click</button>
-    <p><button onclick="ylych_1()">Улучшить +1</button>стоимость - <input type="text" id="cost" readonly></p>
-    <p><button onclick="ylych_10()">Улучшить +10</button>стоимость - <input type="text" id="cost_10" readonly></p>
-    <p><button onclick="ylych_PerTime()">Улучшить +1 в ед времени</button>стоимость - <input type="text" id="cost_PerTime" readonly></p>
-    <p><button onclick="TimeUpgrade()">Сделать быстрее получение клика в ед времени</button>стоимость - <input type="text" id="cost_TimeUpgrade" readonly></p>
-    <p id="NoMoney"></p>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
